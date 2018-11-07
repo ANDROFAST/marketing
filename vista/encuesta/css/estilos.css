@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial;
+    font-size: 14px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#header {
+  padding:40px 40px 40px 300px;
+  background: #dbded1 url("../img/cara2.jpg") no-repeat 20px 20px fixed;
+}
+
+.content1{
+    background: #dbded1 url("../img/cara1.jpg") no-repeat 20px 20px fixed;
+}
+
+.content2{    
+    background: #dbded1 url("../img/cara2.jpg") no-repeat 20px 20px fixed;
+}
+
+body{
+    background-image: url("../img/fondo.jpg");
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat:repeat;
+    position: inherit; 
+}
+
+a{
+    cursor: pointer;  
+    color: #296ba5;  
+    text-decoration: none;  
+    outline: none !Important;
+    -webkit-transition: all 0.5s ease;
+}
+
+h1{
+    margin-bottom: 1em;
+    font-size: 2em;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #0C084D;
+}
+
+form > div{
+    margin-bottom: 20px;
+}
+form .titulo{
+    margin-right: 20px;
+}
+form label .etiqueta{
+    display: block;
+}
+
+form input[type='reset']{
+    padding: 8px 16px;
+    background: #9C771D;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+}
+
+form input[type='reset']:hover{
+    background: #9C0E0E;
+}
+
+form .titulo{
+    margin-right: 2em;
+}
+
+ul{  
+    list-style: none;  
+    list-style-type: none;  
+    list-style-position: outside;  
+}
+
+#encuestaForm input[type='submit']{
+    padding: 8px 16px;
+    background: #4442BC;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    width: auto !Important;
+}
+
+#encuestaForm input[type='submit']:hover{
+    background: #505050;
+}
+
+#registrarForm input[type='submit']{
+    padding: 8px 16px;
+    background: #4442BC;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+}
+
+#registrarForm input[type='submit']:hover{
+    background: #505050;
+}
+
+#registrarForm input[type='button']{
+    padding: 8px 16px;
+    background: #4736EC;
+    display: block;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+}
+
+#registrarForm input[type='button']:hover{
+    background: #EA3232;
+}
+
+#registrarForm input[type='text'], select{
+    border: 1px solid #E0E0E0;
+    padding: 6px;
+    resize: none;
+}
+
+#registrarForm input[type='password']{
+    border: 1px solid #E0E0E0;
+    padding: 6px;
+    resize: none;
+}
+
+#encuesta{
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+#encuesta label{
+
+    background: #EAE0E0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#encuesta li label{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#encuesta li span{
+    margin-left: 1em;
+}
+
+#encuesta li input[type='radio']{
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    display:inline-block;
+    color:#fff;
+    padding:10px 20px;
+    line-height:normal;
+    font-size:20px;
+    font-weight:bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+
+#left, #right{
+    display: inline-block;
+    vertical-align : top;
+}
+
+#left{
+    width: 40%;
+    margin: 0 0 1em 0;
+    padding: 1em;
+}
+
+#right{
+    width: 35%;
+    margin: 0 0 1em 0;
+    padding: 1em;
+}
+
+#middle{
+    text-align: right;
+    margin: 0 0 0.5em 0;
+    padding: 1em;
+}
+
+#end{
+    text-align: center;
+    margin: 0 0 0.5em 0;    
+    padding: 1em;
+}
+
+#formulario{
+    transition: all 0.5s ease;
+    border-radius: 0.5em;
+    box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+}
+
+#registrarPersonalForm input[type='text']{
+    border: 1px solid #E0E0E0;
+    padding: 0.5em;
+    margin: 0.6em;
+    resize: none;    
+}
+
+#registrarPersonalForm input[type='password']{
+    border: 1px solid #E0E0E0;
+    padding: 0.5em;
+    margin: 0.6em;
+    resize: none;    
+}
+
+#registrarPersonalForm input[type='radio']{
+    border: 1px solid #E0E0E0;
+    padding: 0.5em;
+    margin: 0.6em;
+    resize: none;    
+}
+
+#registrarPersonalForm input[type='submit']{
+    padding: 8px 16px;
+    background: #4442BC;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+}
+
+#registrarPersonalForm input[type='submit']:hover{
+    background: #505050;
+}
+
+#registrarPersonalForm input[type='button']{
+    padding: 8px 16px;
+    background: #4736EC;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+}
+
+#secGracias input[type='button']{
+    padding: 8px 16px;
+    background: #4736EC;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+}
+
+#login{
+    position: relative;
+    text-align: right;
+    color: white;
+    clear: both;
+}
+
+
+#requerido{
+    color: red;
+    text-align: center;
+
+}
+ 
+#exito{
+    color: blue;
+    text-align: center;
+
+}
+
+.volver{
+    display: block;
+    padding-top: 15px;
+    clear: both;
+}
+
+.resultado{
+    float: right;
+    margin-left: 10px;
+    margin-top: 7px;
+    color: #15074E;
+}
+
+.perfil{
+    text-align: center;
+}
+
+.fr{
+    float: right;
+}
+.fl, .votar{
+    float: left;
+}
+.cf{
+    clear: both;
+}
+
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+
+.barra{
+    background: #ff3019;
+    background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+    background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%);
+    clear: both;
+    height: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    padding: 6px;
+    border-radius: 4px;
+    max-width: 356px;
+    min-width: 20px;
+}
+
+.wrap{
+    padding: 2em;
+    margin: 0 auto;
+    width: 40em;
+    background: #F3F3F3;
+    border-radius: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #E0E0E0;
+}
+
+.wrapPanel{
+    padding: 2em;
+    margin: 0 auto;
+    width: 20em;
+    background: #F3F3F3;
+    border-radius: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #E0E0E0;
+}
+
+.wrapEncuesta{
+    padding: 2em;
+    margin: 0 auto;
+    width: 50em;
+    background: #F3F3F3;
+    border-radius: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #E0E0E0;
+}
