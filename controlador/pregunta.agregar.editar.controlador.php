@@ -1,22 +1,28 @@
 <?php
 
-require_once '../negocio/Preguntas.clase.php';
+require_once '../negocio/Pregunta.clase.php';
 
 
 parse_str($_POST["p_datosFormulario"], $datosFrm);
 
-$objCargo = new Preguntas();
+$objPregunta = new Pregunta();
 if ($datosFrm["txttipooperacion"]=="editar"){
-    $objCargo->setCodigoPregunta($datosFrm["txtcodigo"]);
+    $objPregunta->setCodigoPregunta($datosFrm["txtcodigo"]);    
 }
-$objCargo->setDescripcion($datosFrm["txtdescrip"]);
+$objPregunta->setNombrePregunta($datosFrm["txtdescrip"]);
+$objPregunta->setCodigoEncuesta ($datosFrm["cbodepartamento"]);
+$objPregunta->setCodigoBloque($datosFrm["cboprovincia"]);    
+$objPregunta->setOrdenPregunta($datosFrm["txtorden"]);  
 try {
     if ($datosFrm["txttipooperacion"]=="agregar"){
-        if ($objCargo->agregar()==true){
-            echo "exito";
+        if ($objPregunta->agregar()==true){
+            echo "exito";           /*
+            echo $objCargo->getCodigoDep();
+            echo $objCargo->getCodigoProvincia();
+            echo $objCargo->getNombre()*/
         }
     }else{
-      if ($objCargo->editar()==true){
+      if ($objPregunta->editar()==true){
             echo "exito";  
       }
     }    

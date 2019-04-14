@@ -1,5 +1,5 @@
 <?php
-
+//session_set_cookie_params("loginUsuarioCliente");
 session_name("loginUsuarioCliente");
 session_start();
 

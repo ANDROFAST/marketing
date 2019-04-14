@@ -1,13 +1,16 @@
 <?php
+$idbloque = $_POST["p_idbloque"];
+$idencuesta = $_POST["p_idencuesta"];
+$idpregunta = $_POST["p_idpregunta"];
 
-$codigoP = $_POST["codigoPregunta"];
-
-require_once '../negocio/Preguntas.clase.php';
-$obj = new Preguntas();
+require_once '../negocio/Pregunta.clase.php';
+$objArea = new Pregunta();
 
 try {
-    $obj->setCodigoPregunta($codigoP);
-    if ($obj->eliminar()){
+    $objArea->setCodigoBloque($idbloque);
+    $objArea->setCodigoEncuesta($idencuesta);
+    $objArea->setCodigoPregunta($idpregunta);
+    if ($objArea->eliminar()){
         echo "exito";
     }
 } catch (Exception $exc) {

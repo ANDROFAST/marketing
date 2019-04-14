@@ -5,24 +5,24 @@ require_once '../negocio/Distrito.clase.php';
 
 parse_str($_POST["p_datosFormulario"], $datosFrm);
 
-$objCargo = new Distrito();
+$objDistrito = new Distrito();
 if ($datosFrm["txttipooperacion"]=="editar"){
-    $objCargo->setCodigoDistrito($datosFrm["txtcodigo"]);    
+    $objDistrito->setCodigoDistrito($datosFrm["txtcodigo"]);    
 }
-$objCargo->setNombre($datosFrm["txtdescrip"]);
-$objCargo->setCodigoDep($datosFrm["cbodepartamento"]);
-$objCargo->setCodigoProvincia($datosFrm["cboprovincia"]);    
+$objDistrito->setNombre($datosFrm["txtdescrip"]);
+$objDistrito->setCodigoDep($datosFrm["cbodepartamento"]);
+$objDistrito->setCodigoProvincia($datosFrm["cboprovincia"]);    
 
 try {
     if ($datosFrm["txttipooperacion"]=="agregar"){
-        if ($objCargo->agregar()==true){
+        if ($objDistrito->agregar()==true){
             echo "exito";           /*
             echo $objCargo->getCodigoDep();
             echo $objCargo->getCodigoProvincia();
             echo $objCargo->getNombre()*/
         }
     }else{
-      if ($objCargo->editar()==true){
+      if ($objDistrito->editar()==true){
             echo "exito";  
       }
     }    

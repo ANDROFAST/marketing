@@ -291,7 +291,7 @@ function calcularTotal(){
     subTotal = neto / (1 + (porcentajeIGV / 100));
  //   igv = neto - subTotal;
         igv=subTotal* (porcentajeIGV/100);
-        netoconigv=igv+neto;
+        netoconigv=igv+subTotal;
     console.log('IGV '+porcentajeIGV);
     
     //mostrar totales

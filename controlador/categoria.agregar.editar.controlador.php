@@ -5,18 +5,18 @@ require_once '../negocio/Categoria.clase.php';
 
 parse_str($_POST["p_datosFormulario"], $datosFrm);
 
-$objCargo = new Categoria();
+$objProvincia = new Categoria();
 if ($datosFrm["txttipooperacion"]=="editar"){
-    $objCargo->setCodigoCategoria($datosFrm["txtcodigo"]);
+    $objProvincia->setCodigoCategoria($datosFrm["txtcodigo"]);
 }
-$objCargo->setDescripcion($datosFrm["txtdescrip"]);
+$objProvincia->setDescripcion($datosFrm["txtdescrip"]);
 try {
     if ($datosFrm["txttipooperacion"]=="agregar"){
-        if ($objCargo->agregar()==true){
+        if ($objProvincia->agregar()==true){
             echo "exito";
         }
     }else{
-      if ($objCargo->editar()==true){
+      if ($objProvincia->editar()==true){
             echo "exito";  
       }
     }    

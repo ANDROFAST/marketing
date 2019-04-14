@@ -1,7 +1,11 @@
 .dropdown-submenu {
   position: relative;
 }
-
+/* Cosmetic only */
+#easyPaginate {width:300px;}
+#easyPaginate img {display:block;margin-bottom:10px;}
+.easyPaginateNav a {padding:5px;}
+.easyPaginateNav a.current {font-weight:bold;text-decoration:underline;}
 .dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;

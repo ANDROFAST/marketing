@@ -5,19 +5,19 @@ require_once '../negocio/Tipo.clase.php';
 
 parse_str($_POST["p_datosFormulario"], $datosFrm);
 
-$objCargo = new Tipo();
+$objProvincia = new Tipo();
 if ($datosFrm["txttipooperacion"]=="editar"){
-    $objCargo->setCodigoTipo($datosFrm["txtcodigo"]);
+    $objProvincia->setCodigoTipo($datosFrm["txtcodigo"]);
 }
-$objCargo->setDescripcion($datosFrm["txtdescrip"]);
-$objCargo->setCodigoCategoria($datosFrm["txtcategoria"]);
+$objProvincia->setDescripcion($datosFrm["txtdescrip"]);
+$objProvincia->setCodigoCategoria($datosFrm["txtcategoria"]);
 try {
     if ($datosFrm["txttipooperacion"]=="agregar"){
-        if ($objCargo->agregar()==true){
+        if ($objProvincia->agregar()==true){
             echo "exito";
         }
     }else{
-      if ($objCargo->editar()==true){
+      if ($objProvincia->editar()==true){
             echo "exito";  
       }
     }    

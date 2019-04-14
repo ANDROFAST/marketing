@@ -24,8 +24,6 @@
                             <li><a href="tipocliente.vista.php">Tipos de Clientes</a></li> 
                             <li class="divider"></li>
                             <li><a href="evento.vista.php">Tipo de Eventos</a></li>
-                            <li><a href="preguntas.vista.php">Preguntas</a></li>
-                            <li><a href="respuesta.vista.php">Respuesta</a></li>  
                             <li class="divider"></li>
                             <li><a href="personal.vista.php">Personal</a></li>  
                             <li><a href="cargo.vista.php">Cargo</a></li>              
@@ -37,8 +35,7 @@
                           <li><a href="provincia.vista.php">Provincia</a></li>              
                           <li><a href="distrito.vista.php">Distrito</a></li>  
 
-                          <li class="divider"></li>
-                          <li><a href="tipo.mensaje.vista.php">Tipo de Mensajes</a></li>  
+                         
                         </ul>
                       </li>';
             }else{
@@ -55,29 +52,20 @@
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-book"></i>&nbsp;Reportes <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">              
-            
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="reporte.ventas.php">Reporte de Ventas</a></li>             
+             <li class="divider"></li>
             <li><a href="reporte.cliente.php">Reporte de Pedidos por Clientes</a></li>
             <li class="divider"></li>
             <li><a href="reporte.pedido.php">Reporte de Productos por Ventas</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bar-chart-o"></i>&nbsp;Marketing <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-              <li><a href="ranking.articulos.vista.php">Ranking de artículos más vendidos por cliente </a></li>
-              <!--<li><a href="mensaje.listado.vista.php">Enviar mensaje</a></li>
-            <li class="divider"></li>
-            <li><a href="encuesta.vista.php">Encuesta</a></li>-->
-          </ul>
-        </li>
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-gears"></i>&nbsp;Administración <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="cargo.vista.php">Grupos de usuarios</a></li>
             <li><a href="usuario.vista.php">Usuarios</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Permisos</a></li>
           </ul>
         </li>
     </ul>

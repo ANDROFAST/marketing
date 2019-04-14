@@ -4,9 +4,9 @@ require_once '../negocio/Cargo.clase.php';
 
 $codigo = $_POST["p_codigo"];
 
-$objCargo = new Cargo();
+$objProvincia = new Cargo();
 try {
-    $resultado = $objCargo->leerDatos($codigo);
+    $resultado = $objProvincia->leerDatos($codigo);
     echo json_encode($resultado);
     
 } catch (Exception $exc) {

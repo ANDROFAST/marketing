@@ -1,36 +1,49 @@
+﻿<?php
+    require_once '../publico/sesion.cliente.validar.vista.php';
+    require_once '../util/funciones/estadoSesion.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../util/bootstrap/css/dropdown.css" rel="stylesheet" type="text/css" />
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+      <title>Producciones Nitro</title>
+
     <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../util/bootstrap/css/dropdown.css" rel="stylesheet" type="text/css" />
     
-    <link href="../util/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../util/bootstrap/css/navbar-static-top.css" rel="stylesheet">
-    <link href="../ant-util/util/bootstrap/css/navbar-static-top.css" rel="stylesheet">
-    <link href="../ant-util/util/lte/css/AdminLTE.css" rel="stylesheet">
-    <link href="../ant-util/util/lte/css/font-awesome.css" rel="stylesheet">
-    <link href="../util/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="../vista/css/checkbox.css" rel="stylesheet">
-   <link href="../util/css/estilos-footer.css" rel="stylesheet">   
-    <script src="../util/bootstrap/js/ie-emulation-modes-warning.js"></script>
-   
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <!--sweetalert-->
     <script src="../util/swa/sweetalert-dev.js"></script>
     <!--sweetalert-->
     <link rel="stylesheet" href="../util/swa/sweetalert.css">
     <link href="../util/bootstrap/css/dropdown.css" rel="stylesheet" type="text/css" />
     
-</head>
-<body>
-    <?php
-        require_once '../publico/publico.cabecera.vista.php';
-    ?>
     
-   <!---start-content----->
+  </head>
+
+  <body>
+ 
+        <?PHP
+        require_once '../publico/publico.cabecera.vista.php';
+    ?>  
+    <!-- Page Content -->
+    <div class="container">
+         <!-- Barra de navegación -->
+         <br> <br> <br>
+    <!---start-content----->
         <div class="content">
             <div class="main">
                 <div class="border"></div>
@@ -56,7 +69,7 @@
                                           <div class="row col-md-12 col-sm-12 col-xs-12">
                                               <div class="col-md-6 col-sm-12 col-xs-12">
                                                   <span>TIPO DE CLIENTE<font color = "red">*</font></span>
-                                                    <select class="form-control" name="opcion_cliente" id="opcion_cliente" required="">
+                                                    <select class="form-control form-control-lg" name="opcion_cliente" id="opcion_cliente" required="">
                                                     </select>
                                               </div>
                                             </div>
@@ -147,18 +160,18 @@
                                              
                                             <div class="col-md-4 col-sm-12 col-xs-12">
                                                   <span>DEPARTAMENTO<font color = "red">*</font></span>
-                                                  <select id="cbodepartamentoamodal" name="cbodepartamentoamodal" class="form-control" required="">
+                                                  <select id="cbodepartamentoamodal" name="cbodepartamentoamodal" class="form-control form-control-lg" required="">
 
                                                   </select>
                                               </div>
                                               <div class="col-md-4 col-sm-12 col-xs-12">
                                                   <span>PROVINCIA<font color = "red">*</font></span>
-                                                  <select id="cboprovinciamodal" name="cboprovinciamodal" class="form-control" required="">
+                                                  <select id="cboprovinciamodal" name="cboprovinciamodal" class="form-control form-control-lg" required="">
                                                   </select>
                                               </div>
                                               <div class="col-md-4 col-sm-12 col-xs-12">
                                                   <span>DISTRITO<font color = "red">*</font></span>
-                                                  <select id="cbodistritomodal" name="cbodistritomodal" class="form-control" required="">
+                                                  <select id="cbodistritomodal" name="cbodistritomodal" class="form-control form-control-lg" required="">
                                                   </select>
                                               </div>
                                              
@@ -214,15 +227,29 @@
                   </div>
             </div>
         </div>
-    <!-- footer -->
-        <?php
-        include './footer.php';
-        ?>
-        <!-- /footer -->
+            
+
+  </div>
+</form>
+</div>
+  <br> <br> <br>
+    <!-- /.container -->
+  <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../util/bootstrap/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="../util/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <?php
-        include 'scripts.vista.php';
+	include 'scripts.vista.php';
     ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
     <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
     <script src="../util/bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -235,6 +262,7 @@
     <script src="../publico/js/cliente_publico.js"></script>
     <script src="../publico/js/validaciones.js"></script>
     <script src="../util/publico/sweet-alert/sweet-alert.js"></script>
+  </body>
 
-</body>
 </html>
+

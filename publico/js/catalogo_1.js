@@ -60,13 +60,15 @@ function listado(){
         var datosJSON = resultado;
      
         if( datosJSON.estado === 200 ){
-            var html = '<h2>Artículos</h2><hr>';
+            var html = '<h2></h2><hr>';
             
             //Detalle
             $.each(datosJSON.datos, function(i,item) {
-                html += '<div class="col-xs-6 col-md-3">';
+                html += '<div class="col-lg-4 mb-4">';
+                html += '<div class="card h-100">';
+                html += '<h6 class="card text-white bg-secondary mb-3"  style="height: 3rem;><center class="text-warning">'+item.producto+'</center></h6>';
                 html += '<a class="thumbnail" style="text-decoration:none">';
-                html += '<img src="../imagenes/articulos/'+ item.codigo +'.jpg" style="min-width: 250px; min-height:250px; max-width=250px; max-height: 250px";/>';               
+                html += '<img src="../imagenes/articulos/'+ item.codigo +'.jpg" class="img-responsive" />';               
                 
                 var articulo = "";
                 if( item.producto.length > 31 ){
@@ -76,15 +78,16 @@ function listado(){
                     articulo = item.producto;
                 }
                 
-                html += '<p ALIGN=center><b>'+ articulo+ '</b></p>';
-                html += '<p><h3>S/'+ item.precio + '</h3></p>';
-                
-                html += '<button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal" id="btnagregar"'+ 
+               // html += '<p ALIGN=center><b>'+ articulo+ '</b></p>';
+                html += '<p><h6>'+'PRECIO: S/'+ item.precio + '</h6></p>';
+                html += '<p><h6>'+'PRESENTACION: '+ item.presentacion_a + '</h6></p>';
+                html += '<button type="button" class="btn btn-warning text-white btn-block btn-lg" data-toggle="modal" data-target="#myModal" id="btnagregar"'+ 
                              'onclick="leerDatos('+ item.codigo +')">AÑADIR AL CARRITO   ' 
-                          +'<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></button>';
+                          +'<span class="fa fa-plus" aria-hidden="true"></span></button>';
 
                 
                 html += '</a>';
+                html += '</div>';
                 html += '</div>';
             });
             

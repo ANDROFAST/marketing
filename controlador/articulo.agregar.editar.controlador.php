@@ -16,25 +16,25 @@ echo $_FILES["p_foto"]["tmp_name"];
     }
     /*capturar el nombre de la foto del producto que se va a cargar*/
     
-$objCargo = new Articulo();
+$objProvincia = new Articulo();
 if ($datosFrm["txttipooperacion"]=="editar"){
-    $objCargo->setCodigoArticulo($datosFrm["txtcodigo"]);
+    $objProvincia->setCodigoArticulo($datosFrm["txtcodigo"]);
 }
-$objCargo->setNombre($datosFrm["txtnombre"]);
-$objCargo->setPresentacion($datosFrm["txtpresentacion"]);
-$objCargo->setPrecioVenta($datosFrm["txtprecio"]);
-$objCargo->setStock($datosFrm["txtstock"]);
-$objCargo->setCodigoTipo($datosFrm["txttipo"]);
-$objCargo->setEstado($datosFrm["txtestado"]);
-$objCargo->setFoto($foto);;
+$objProvincia->setNombre($datosFrm["txtnombre"]);
+$objProvincia->setPresentacion($datosFrm["txtpresentacion"]);
+$objProvincia->setPrecioVenta($datosFrm["txtprecio"]);
+$objProvincia->setStock($datosFrm["txtstock"]);
+$objProvincia->setCodigoTipo($datosFrm["txttipo"]);
+$objProvincia->setEstado($datosFrm["txtestado"]);
+$objProvincia->setFoto($foto);;
 try {
       
     if ($datosFrm["txttipooperacion"]=="agregar"){
-        if ($objCargo->agregar()==true){
+        if ($objProvincia->agregar()==true){
             echo "exito";
         }
     }else{
-      if ($objCargo->editar()==true){
+      if ($objProvincia->editar()==true){
             echo "exito";  
       }
     }    

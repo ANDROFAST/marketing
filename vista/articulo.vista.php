@@ -22,7 +22,7 @@
     ?>
 
     </head>
-    <body class="skin-green layout-top-nav">
+    <body class="skin-blue layout-top-nav">
         <!-- Site wrapper -->
         <div class="wrapper">
 
@@ -51,7 +51,7 @@
                   <input type="hidden" name="txttipooperacion" id="txttipooperacion" class="form-control">
                   <div class="row">
                     <div class="col-xs-3">
-                        <label>Código Cargo: <font color = "red">*</font></label>
+                        <label>Código : <font color = "red">*</font></label>
                     <p><input type="text" name="txtcodigo" id="txtcodigo" class="form-control input-sm" placeholder="" readonly=""></p>
                     </div>
                     <div class="col-xs-9">
@@ -104,7 +104,7 @@
                     </div>
                   </div>
                   
-                  <p> <label>&nbsp;&nbsp;&nbsp;&nbsp;Foto de la mascota: </label>
+                  <p> <label>&nbsp;&nbsp;&nbsp;&nbsp;Foto del Articulo: </label>
                               <input type="file" name="txtfoto" id="txtfoto" class="form-control"><p>
                   
                   </div>

@@ -46,7 +46,7 @@ class Distrito extends Conexion{
             $sql = "select d.codigo_departamento, d.codigo_provincia,d.codigo_distrito, d.nombre as dist, p.nombre as prov, dep.nombre  as dep
                     from provincia p inner join departamento dep on p.codigo_departamento=dep.codigo_departamento
                                     inner join distrito d on (p.codigo_departamento=d.codigo_departamento and p.codigo_provincia=d.codigo_provincia)
-                    order by 2";
+                    ";
             
             $sentencia = $this->dblink->prepare($sql);
             $sentencia->execute();

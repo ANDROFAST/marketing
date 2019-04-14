@@ -2,31 +2,54 @@
     require_once '../publico/sesion.cliente.validar.vista.php';
     require_once '../util/funciones/estadoSesion.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Carrito de compras</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../util/swa/sweetalert.css">
-</head>
-<body>
-    <!-- Barra de navegación -->
-    <?PHP
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+      <title>Producciones Nitro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../util/bootstrap/css/dropdown.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--sweetalert-->
+    <script src="../util/swa/sweetalert-dev.js"></script>
+    <!--sweetalert-->
+    <link rel="stylesheet" href="../util/swa/sweetalert.css">
+    <link href="../util/bootstrap/css/dropdown.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+ 
+        <?PHP
         require_once '../publico/publico.cabecera.vista.php';
-    ?>
-    <!------------------------>
-    <br>
-<div class="container">
+    ?>  
+    <!-- Page Content -->
+    <div class="container">
+         <!-- Barra de navegación -->
+         <br> <br> <br>
+      <!-- Page Heading/Breadcrumbs -->
+     <h1 class="mt-4 mb-3 text-warning" >Carrito
+        <small>de Compras</small>
+      </h1>
     <form id="frmgrabar">
   <div class="row">
     <div class="col-sm-9">
         <table width="100%">
             <tr>
-                <td style="width: 20%"><h3>TU CARRITO</h3></td>
                 <td style="vertical-align:bottom;">CANTIDAD AÑADIDA (<label id="lblnum"></label>)</td>
                 <td style="text-align:right; vertical-align:bottom;">
                     <a href="../publico/publico.principal.vista.php" style="text-decoration:none">Seguir comprando</a>
@@ -138,6 +161,19 @@
   </div>
 </form>
 </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+  <!--  <footer class="py-5 bg-dark  footer navbar-fixed-bottom">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container 
+    </footer> -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../util/bootstrap/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="../util/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
      <?php
 	include 'scripts.vista.php';
@@ -148,6 +184,8 @@
     
    
     <!--<script src="js/catalogo.js" type="text/javascript"></script>-->
-</body>
+  </body>
+
 </html>
+
 

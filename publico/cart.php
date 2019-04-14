@@ -3,9 +3,9 @@ require_once '../datos/Conexion.clase.php';
 session_start();
 //try{
 $usuario = 'postgres';
-$password = '1234';
+$password = '12345';
 /*En este caso el tipo es pgsql, además le indicamos el puerto */
-$conn = new PDO('pgsql:host=localhost;port=5432;dbname=bdAlexprueba', $usuario, $password);
+$conn = new PDO('pgsql:host=localhost;port=5432;dbname=Tesis', $usuario, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //}catch(PDOException $e){
 //echo "ERROR: " . $e->getMessage();

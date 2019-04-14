@@ -4,11 +4,11 @@
 $codigoCargo = $_POST["codigoCargo"];
 
 require_once '../negocio/Cargo.clase.php';
-$objCargo = new Cargo();
+$objProvincia = new Cargo();
 
 try {
-    $objCargo->setCodigoCargo($codigoCargo);
-    if ($objCargo->eliminar()){
+    $objProvincia->setCodigoCargo($codigoCargo);
+    if ($objProvincia->eliminar()){
         echo "exito";
     }
 } catch (Exception $exc) {

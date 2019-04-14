@@ -5,23 +5,23 @@ require_once '../negocio/Provincia.clase.php';
 
 parse_str($_POST["p_datosFormulario"], $datosFrm);
 
-$objCargo = new Provincia();
+$objProvincia = new Provincia();
 if ($datosFrm["txttipooperacion"]=="editar"){
-    $objCargo->setCodigoProvincia($datosFrm["txtcodigo"]);    
+    $objProvincia->setCodigoProvincia($datosFrm["txtcodigo"]);    
 }
-$objCargo->setNombre($datosFrm["txtdescrip"]);
-$objCargo->setCodigoDep($datosFrm["cbodepartamento"]);
+$objProvincia->setNombre($datosFrm["txtdescrip"]);
+$objProvincia->setCodigoDep($datosFrm["cbodepartamento"]);
 
 try {
     if ($datosFrm["txttipooperacion"]=="agregar"){
-        if ($objCargo->agregar()==true){
+        if ($objProvincia->agregar()==true){
             echo "exito";           /*
             echo $objCargo->getCodigoDep();
             echo $objCargo->getCodigoProvincia();
             echo $objCargo->getNombre()*/
         }
     }else{
-      if ($objCargo->editar()==true){
+      if ($objProvincia->editar()==true){
             echo "exito";  
       }
     }    

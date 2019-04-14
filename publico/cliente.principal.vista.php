@@ -17,8 +17,7 @@
     <title>Web de compras</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../util/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../util/bootstrap/css/navbar-static-top.css" rel="stylesheet">
+    <link href="../util/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="../util/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <script src="../util/bootstrap/js/ie-emulation-modes-warning.js"></script>
     <!--sweetalert-->
@@ -35,6 +34,7 @@
     ?>
     <!------------------------>
     <div class="container">
+        <br>    <br>    <br>    <br>
 <!--        <div class="row" id="pnImagen">
              se llena desde javascript 
         </div>-->
@@ -46,10 +46,12 @@
                     <a href="" class="list-group-item active">MI CUENTA</a>
                     <a href="javascript:cargaDatos()" class="list-group-item">Datos personales</a>
                     <a href="#pnlMenu2" class="list-group-item">Cuenta</a>
+                    <a href="#pnlMenu2" class="list-group-item">Encuesta</a>
                 </div>
                 
                 <div class="list-group">
                     <a href="#" class="list-group-item active">INFORMACIÓN DEL PEDIDO</a>
+                    <a href="../publico/carrito.vista.php" class="list-group-item">Carrito de compras</a>
                     <a href="javascript:cargaPedidos()" class="list-group-item">Historial de pedidos</a>
                     <a href="#" class="list-group-item">Seguimiento de tu pedido</a>
                 </div>

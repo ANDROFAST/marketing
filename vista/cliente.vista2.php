@@ -16,7 +16,7 @@
     ?>
 
     </head>
-    <body class="skin-green layout-top-nav">
+    <body class="skin-blue layout-top-nav">
         <!-- Site wrapper -->
         <div class="wrapper">
 

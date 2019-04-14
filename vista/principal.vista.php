@@ -36,7 +36,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="skin-green layout-top-nav">
+  <body class="skin-blue layout-top-nav">
     <!-- Site wrapper -->
     <div class="wrapper">
       
